@@ -11,22 +11,28 @@ var mt = '//edge-live17-sl';
 var playerInstance=jwplayer("player");
 playerInstance.setup({
     playlist: [{
-    "title": "REPRODUCTOR",
-    "description": "",
+    "title": "ESTAS VIENDO GENTV",
+    "description": "GENTV",
       "sources": [
         {
           "default": false,
           "type": "dash",
-          "file": "//dtvott-abc.akamaized.net/dash_live_1255/manifest.mpd" + atob("aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzEyNTQvbWFuaWZlc3QubXBk"),
-					"drm": {"clearkey": {"keyId": atob("YzA0MDJiYTA3ZGFkNWIwY2IyMjdhZjI0OGVhMmM1ZWU="), "key": atob("YWI0NjNmYjc4ZTdlMTdiNWUwZWU0ZWE4YmNhMzVlYzk=")}},
-				}]
-			}],
-			width: "100%", height: "100%", aspectratio: "16:9", autostart: true, cast: {}, sharing: {}
-		});
-		player.on("play", function(e){player.setCurrentAudioTrack("0")});
-	</script>
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="90e0bd9aeb500a7b96ec16f3-|49" defer=""></script></body>
+          "file": mt+atob("LmN2YXR0di5jb20uYXIvbGl2ZS9jN2Vkcy9HRU5fVFYvU0FfTGl2ZV9kYXNoX2VuYy9HRU5fVFYubXBk"),
+          "drm": {
+            "clearkey": {"keyId": atob("NDllYjkyNGJhOTk4Y2E3ZmJiYWVlMzBkY2VmMWVjYjQ="), "key": atob("NmUxMzFiMDRiMmU4NzU5OGZiNTg4YWMyMDU2NzM2OTg=")}
+          },
+          "label": "0"
+        }
+      ]
+    }],
+    width: "100%",
+    height: "100%",
+    aspectratio: "16:9",
+    autostart: true,
+    mute: false,
+    cast: {},
+    sharing: {}
+});
+</script>
+</body>
 </html>
-
-
-
